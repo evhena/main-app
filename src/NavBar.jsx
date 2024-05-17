@@ -16,7 +16,7 @@ export default function NavBar() {
         <br />
         <Link to="/templates">Templates List</Link>
         <br />
-        <Link to="/templates/:id">TemplateEditor</Link>
+        <Link to="/templates/:id">Template Editor</Link>
       </div>
     </div>
   );
