@@ -1,3 +1,7 @@
 .nav-bar {
-  background-color: lightblue;
+  width: 300px;
+}
+
+.nav-bar-list {
+  background-color: lightgrey;
 }

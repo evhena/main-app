@@ -5,18 +5,19 @@ import { Link } from 'react-router-dom';
 export default function NavBar() {
   return (
     <div className="nav-bar">
-      NavigationBar
+      Navigate to page:
       <hr />
-      <line />
-      <Link to="/">Your Designs</Link>
-      <br />
-      <Link to="/profile">Profile page</Link>
-      <br />
-      <Link to="/social">Social Accounts</Link>
-      <br />
-      <Link to="/templates">Templates List</Link>
-      <br />
-      <Link to="/templates/:id">TemplateEditor</Link>
+      <div className="nav-bar-list">
+        <Link to="/">Your Designs</Link>
+        <br />
+        <Link to="/profile">Profile page</Link>
+        <br />
+        <Link to="/social">Social Accounts</Link>
+        <br />
+        <Link to="/templates">Templates List</Link>
+        <br />
+        <Link to="/templates/:id">TemplateEditor</Link>
+      </div>
     </div>
   );
 }
