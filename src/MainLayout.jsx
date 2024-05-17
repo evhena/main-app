@@ -10,7 +10,7 @@ import NavBar from './NavBar';
 // import YourDesigns from 'platform/YourDesigns';
 
 const TemplatesList = React.lazy(() => import('platform/TemplatesList'));
-const TemplateEditor = React.lazy(() => import('platform/TemplatesList'));
+const TemplateEditor = React.lazy(() => import('platform/TemplateEditor'));
 const YourDesigns = React.lazy(() => import('platform/YourDesigns'));
 const ProfilePage = React.lazy(() => import('accounts/ProfilePage'));
 const SocialAccounts = React.lazy(() => import('accounts/SocialAccounts'));
