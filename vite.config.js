@@ -8,14 +8,17 @@ export default defineConfig({
     federation({
       name: 'app',
       remotes: {
-        // accounts: 'http://localhost:5001/assets/remoteEntry.js',
-        accounts:
-          'https://dzfa1uifb0sb6.cloudfront.net/buildTestjs/accounts/v0.0.0/remoteEntry.js',
-        // platform: 'http://localhost:5002/assets/remoteEntry.js',
-        platform:
-          'https://dzfa1uifb0sb6.cloudfront.net/buildTestjs/platform/v0.0.0/remoteEntry.js',
+        accounts: 'http://localhost:5001/assets/remoteEntry.js',
+        // accounts:
+        //   'https://dzfa1uifb0sb6.cloudfront.net/buildTestjs/accounts/v0.0.0/remoteEntry.js',
+        platform: 'http://localhost:5002/assets/remoteEntry.js',
+        // platform:
+        //   'https://dzfa1uifb0sb6.cloudfront.net/buildTestjs/platform/v0.0.0/remoteEntry.js',
       },
-      shared: ['react', 'react-dom'],
+      exposes: {
+        './NavBar': './src/NavBar.jsx',
+      },
+      shared: ['react', 'react-dom', 'react-router-dom'],
     }),
   ],
   build: {
